@@ -1046,6 +1046,14 @@ kbd {
   transition: background 0.15s ease;
 }
 .ca-copy:hover { background: rgba(46, 155, 245, 0.22); }
+.ca-row-rh { max-width: 100%; }
+.ca-address-full {
+  font-size: 0.7rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  line-height: 1.35;
+}
 .ca-links { display: inline-flex; gap: 16px; }
 .ca-link { color: var(--dim); font-size: 0.72rem; text-decoration: none; }
 .ca-link:hover { color: var(--accent); }

@@ -11,6 +11,10 @@ const REFRESH_MS = 60_000;
 const DEXSCREENER_PAGE = `https://dexscreener.com/ethereum/${SPROTO_MINT_ADDRESS}`;
 const BLOCKSCOUT_TOKEN = `https://etherscan.io/token/${SPROTO_MINT_ADDRESS}`;
 
+// $BITCOIN's Robinhood Chain contract — shown in full on the title/sign-in
+// screen footer so players can copy it straight into a wallet or explorer.
+const ROBINHOOD_CA = "0x065714ce45e156ef6722de03a35c1ec44b010620";
+
 // Local short-address helper kept dependency-free for this lazy widget.
 function shortAddr(s, head = 6, tail = 6) {
   if (!s) return "—";
@@ -103,6 +107,19 @@ export class MarketCapUI {
     const dexLink = document.querySelector("#ca-dexscreener");
     const scanLink = document.querySelector("#ca-solscan");
 
+    // Robinhood Chain address row — independent of the Ethereum mint below, so
+    // it is wired before the early return that guards the $BITCOIN widgets.
+    const rhAddrEl = document.querySelector("#ca-address-rh");
+    const rhCopyBtn = document.querySelector("#ca-copy-rh");
+    if (rhAddrEl) {
+      rhAddrEl.title = ROBINHOOD_CA;
+      rhAddrEl.style.cursor = "pointer";
+      rhAddrEl.addEventListener("click", () => this.copyAddress(ROBINHOOD_CA));
+    }
+    if (rhCopyBtn) {
+      rhCopyBtn.addEventListener("click", () => this.copyAddress(ROBINHOOD_CA));
+    }
+
     if (!SPROTO_MINT_ADDRESS) return;
 
     if (addrEl) {
@@ -122,13 +139,13 @@ export class MarketCapUI {
     }
   }
 
-  async copyAddress() {
+  async copyAddress(address = SPROTO_MINT_ADDRESS) {
     try {
       if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(SPROTO_MINT_ADDRESS);
+        await navigator.clipboard.writeText(address);
       } else {
         const ta = document.createElement("textarea");
-        ta.value = SPROTO_MINT_ADDRESS;
+        ta.value = address;
         ta.style.position = "fixed";
         ta.style.opacity = "0";
         document.body.appendChild(ta);
