@@ -211,8 +211,8 @@ app.get('/api/raffle/user', requireSession, (req, res) => res.json({ entries: []
 app.get('/api/raffle/history', (req, res) => res.json({ raffles: [] }));
 app.post('/api/raffle/exchange-fish', requireSession, (req, res) => res.json({ ok: true, tickets: 0 }));
 app.post('/api/raffle/buy-pack', requireSession, (req, res) => res.json({ ok: false, error: 'No active raffle pack' }));
-app.get('/api/widget', async (req, res) => res.json({ leader: 'SPROTO FISHING', earned: '0', players: pool ? Number((await pool.query('SELECT COUNT(*) c FROM players')).rows[0].c) : players.size, tagline: 'Cast a line on Ethereum Mainnet.' }));
+app.get('/api/widget', async (req, res) => res.json({ leader: 'FISHN LUV', earned: '0', players: pool ? Number((await pool.query('SELECT COUNT(*) c FROM players')).rows[0].c) : players.size, tagline: 'Cast a line on Ethereum Mainnet.' }));
 app.get('/api/treasury/balance', (req, res) => res.json({ chain: 'ethereum', rewardEscrow: REWARD_ESCROW_ADDRESS || null, asset: GAME_TOKEN_ADDRESS }));
 installEconomyAdminRoutes(app, { pool });
-if (process.argv[1] && process.argv[1].endsWith('server.js')) app.listen(PORT, () => console.log(`SPROTO FISHING API listening on ${PORT}`));
+if (process.argv[1] && process.argv[1].endsWith('server.js')) app.listen(PORT, () => console.log(`FISHN LUV API listening on ${PORT}`));
 export default app;

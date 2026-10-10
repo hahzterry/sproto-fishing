@@ -23,7 +23,7 @@ export const CHARACTERS = [
     id: "sproto-guardian",
     name: "Sproto Guardian",
     emoji: "🐟",
-    blurb: "The cheerful snack guardian of the pier. SPROTO FISHING's own angler.",
+    blurb: "The cheerful snack guardian of the pier. FISHN LUV's own angler.",
     url: "/models/characters/sproto-guardian.glb",
     glbClips: true,
     anims: {

@@ -13,7 +13,7 @@ const BLOCKSCOUT_TOKEN = `https://etherscan.io/token/${SPROTO_MINT_ADDRESS}`;
 
 // $BITCOIN's Robinhood Chain contract — shown in full on the title/sign-in
 // screen footer so players can copy it straight into a wallet or explorer.
-const ROBINHOOD_CA = "0x065714ce45e156ef6722de03a35c1ec44b010620";
+const ROBINHOOD_CA = "0x0629D171F3F954E4A1C386D00f1C9eDBe7562C7E";
 
 // Local short-address helper kept dependency-free for this lazy widget.
 function shortAddr(s, head = 6, tail = 6) {

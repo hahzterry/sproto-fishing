@@ -1,8 +1,8 @@
 {
   "dir": "ltr",
   "lang": "en-US",
-  "name": "SPROTO FISHING",
-  "short_name": "SPROTO FISHING",
+  "name": "FISHN LUV",
+  "short_name": "FISHN LUV",
   "id": "/",
   "description": "A web3 fishing adventure on Ethereum Mainnet. Catch fish, earn $BITCOIN, unlock new waters, and own your catches.",
   "start_url": "/",
@@ -60,7 +60,7 @@
       "sizes": "2533x1258",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "SPROTO FISHING title screen — live weather and the global Fishermans Hole chat"
+      "label": "FISHN LUV title screen — live weather and the global Fishermans Hole chat"
     },
     {
       "src": "/screenshots/screenshot-2.png",

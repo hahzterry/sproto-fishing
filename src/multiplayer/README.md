@@ -1,6 +1,6 @@
 # Shared world (Multiplayer Agent)
 
-Real-time presence for SPROTO FISHING: the anglers standing on your bank, live.
+Real-time presence for FISHN LUV: the anglers standing on your bank, live.
 
 ```
 mpConfig.js       key, endpoints, per-location placement, tuning

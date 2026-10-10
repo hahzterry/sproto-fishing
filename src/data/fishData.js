@@ -892,7 +892,7 @@ export const FISH_SPECIES = [
     desc: "Forged, they say, in the heart of a fallen star — and impossibly vast.",
   },
   {
-    id: "sprotofishing", name: "SPROTO FISHING", rarity: "ultramythic",
+    id: "sprotofishing", name: "FISHN LUV", rarity: "ultramythic",
     locations: ["ocean"], zones: ["deep"], time: ["dawn", "day", "dusk", "night"],
     sizeCm: [500, 500], weightMidKg: 777, baseValue: 27000, fixedValue: true, jackpot: true,
     fight: { strength: 3.8, surgeEvery: [0.9, 1.6], heft: 3.8, stamina: 90 },

@@ -32,7 +32,7 @@ export class OnboardingUI {
     this.panel.innerHTML = `
       <div class="modal-content onboarding-modal">
         <div class="onboarding-hero">
-          <img class="onboarding-logo onboarding-brand-logo" src="/brand/sproto-fishing-logo.png" alt="SPROTO FISHING — a HarryPotterObamaSonic10Inu game" />
+          <img class="onboarding-logo onboarding-brand-logo" src="/brand/sproto-fishing-logo.png" alt="FISHN LUV — a HarryPotterObamaSonic10Inu game" />
           <h1 class="onboarding-title">Welcome to <span>Sproto Fishing</span></h1>
           <p class="onboarding-tagline">
             The web3 fishing adventure on Ethereum Mainnet. Cast your line, reel in rare

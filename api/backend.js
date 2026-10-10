@@ -108,7 +108,7 @@ export default function handler(req, res) {
   if (!base) {
     return res.status(503).json({
       error: "Backend not configured",
-      detail: "Set RENDER_API_BASE to the SPROTO FISHING Render API URL.",
+      detail: "Set RENDER_API_BASE to the FISHN LUV Render API URL.",
     });
   }
   const query = { ...(req.query || {}) };

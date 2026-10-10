@@ -11,7 +11,7 @@ test('normalizes checksum EVM addresses', () => {
 test('verifies base64 personal_sign signatures from frontend session flow', async () => {
   const wallet = Wallet.createRandom();
   const issued = Date.now();
-  const message = `Sign in to SPROTO FISHING\nwallet: ${wallet.address}\nnonce: test\nissued: ${issued}`;
+  const message = `Sign in to FISHN LUV\nwallet: ${wallet.address}\nnonce: test\nissued: ${issued}`;
   const hexSignature = await wallet.signMessage(message);
   const base64Signature = Buffer.from(hexSignature.slice(2), 'hex').toString('base64');
   assert.equal(verifyEvmLogin({ walletAddress: wallet.address, message, signature: base64Signature }), true);
@@ -20,7 +20,7 @@ test('verifies base64 personal_sign signatures from frontend session flow', asyn
 test('rejects a signature from a different wallet', async () => {
   const signer = Wallet.createRandom();
   const claimed = Wallet.createRandom();
-  const message = `Sign in to SPROTO FISHING\nwallet: ${claimed.address}\nnonce: test\nissued: ${Date.now()}`;
+  const message = `Sign in to FISHN LUV\nwallet: ${claimed.address}\nnonce: test\nissued: ${Date.now()}`;
   const base64Signature = Buffer.from((await signer.signMessage(message)).slice(2), 'hex').toString('base64');
   assert.equal(verifyEvmLogin({ walletAddress: claimed.address, message, signature: base64Signature }), false);
 });

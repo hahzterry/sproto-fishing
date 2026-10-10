@@ -1,5 +1,5 @@
 /**
- * Build every brand raster from the one master SPROTO FISHING logo.
+ * Build every brand raster from the one master FISHN LUV logo.
  *
  * Usage: node scripts/build-brand-assets.mjs <path-to-master-logo.png>
  *

@@ -1,5 +1,5 @@
 // Consumable bait. ONE bait is spent per Pro cast (see economy.consumeBait), so
-// bait is the wager chip of SPROTO FISHING: players buy bait with $BITCOIN, cast
+// bait is the wager chip of FISHN LUV: players buy bait with $BITCOIN, cast
 // it, then win by selling whatever fish that bait odds table produces.
 //
 // Hybrid mode:

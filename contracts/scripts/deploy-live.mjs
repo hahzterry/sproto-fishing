@@ -1,4 +1,4 @@
-// Real Ethereum broadcast deployer for the SPROTO FISHING P2E contract suite.
+// Real Ethereum broadcast deployer for the FISHN LUV P2E contract suite.
 // Compiles with solc, deploys with ethers against a live RPC, and writes the
 // resulting addresses/tx hashes to deployments/<network>.json.
 //

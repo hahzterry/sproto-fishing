@@ -1104,7 +1104,7 @@
     {
       "tokenId": 123,
       "speciesId": "sprotofishing",
-      "speciesName": "SPROTO FISHING",
+      "speciesName": "FISHN LUV",
       "image": "/sproto-fishing-fish.png",
       "rarityScore": 2520,
       "rarityRank": 8,
@@ -1734,7 +1734,7 @@
     {
       "tokenId": 193,
       "speciesId": "sprotofishing",
-      "speciesName": "SPROTO FISHING",
+      "speciesName": "FISHN LUV",
       "image": "/sproto-fishing-fish.png",
       "rarityScore": 2352,
       "rarityRank": 13,
@@ -3606,7 +3606,7 @@
     {
       "tokenId": 401,
       "speciesId": "sprotofishing",
-      "speciesName": "SPROTO FISHING",
+      "speciesName": "FISHN LUV",
       "image": "/sproto-fishing-fish.png",
       "rarityScore": 2674,
       "rarityRank": 5,

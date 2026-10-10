@@ -1,12 +1,12 @@
 {
-  "name": "Bull Fish #123 - SPROTO FISHING",
-  "description": "A limited SPROTO FISHING catch NFT minted from verified Ethereum Mainnet gameplay. Art uses the SPROTO FISHING species file; traits and rarity score make this edition unique.",
+  "name": "Bull Fish #123 - FISHN LUV",
+  "description": "A limited FISHN LUV catch NFT minted from verified Ethereum Mainnet gameplay. Art uses the FISHN LUV species file; traits and rarity score make this edition unique.",
   "image": "/sproto-fishing-fish.png",
   "external_url": "https://www.sprotofishing.fun",
   "attributes": [
     {
       "trait_type": "Species",
-      "value": "SPROTO FISHING"
+      "value": "FISHN LUV"
     },
     {
       "trait_type": "Species ID",

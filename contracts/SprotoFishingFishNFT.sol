@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-/// @notice Minimal ERC-721 Fish NFT for SPROTO FISHING. Free mints are gated by
+/// @notice Minimal ERC-721 Fish NFT for FISHN LUV. Free mints are gated by
 /// server signatures earned through verified gameplay on Ethereum Mainnet.
 contract SprotoFishingFishNFT {
-    string public name = "SPROTO FISHING Fish";
+    string public name = "FISHN LUV Fish";
     string public symbol = "BFBFISH";
     uint256 public constant MAX_SUPPLY = 500;
     uint256 public immutable chainId;
